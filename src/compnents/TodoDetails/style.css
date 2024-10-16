@@ -40,6 +40,8 @@
   align-items:center;
   color:black;
   margin-bottom:5px;
+  gap:10px;
+  
 }
 
 .todoDetails-items-button{
@@ -51,34 +53,40 @@
    box-shadow: 1px 1px 0px #a09c9c;
 }
 
-.dustbin{
+.dustbin-img{
   height:20px;
   width:40px;
-  background-color:#ff1f1f;
+  background-color:#ff1f1f
  
 }
 
 .check-box-cont{
-  background-color:white;
   display:flex;
   justify-items:center;
   align-items:center;
 }
 
-.img-{
-  height:20px;
+.empty-checkBox-img{
+  height:35px;
   width:40px;
-  /* appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none; */
-  /* width: 24px;
-  height: 24px;
-  background-color: #fff;
-  border: 2px solid #555;
-  border-radius: 6px;
-  position: relative;
-  cursor: pointer;
-  outline: none;
-  transition: all 0.3s ease; */
 }
+
+.green{
+  color:#000000;
+  background-color:#55f755;
+  text-decoration: line-through 1.5px;
+  
+}
+
+.red{
+  color:#2d0101;
+  background-color:#fb5151;
+}
+
+.white{
+  color:black;
+  background-color:white;
+}
+
+
 
