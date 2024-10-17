@@ -12,18 +12,10 @@ import TodoDetails from '../TodoDetails/index';
 
 
 const Form = () =>{
-
-
-  // const obj = {
-  //   value :"akul",
-  //   state : "pending",
-  //   color: " white"
-  // }
-
   
-
   const [formInput,setFormInput] = useState<string>("");
   const [formArr,setFormArr] = useState<todoObjType[]>([]);
+  
 
  const  handleChange = (e:any) => {
    setFormInput(e.target.value);
@@ -41,8 +33,7 @@ const Form = () =>{
        state : "pending",
        color: "black"
      }
-    
-    console.log(obj);
+    // console.log(obj);
     setFormArr([...formArr,obj]);
     setFormInput("");
   }
@@ -58,6 +49,11 @@ const Form = () =>{
     
   }
 
+  const handleDoubleClickForPending = (index:number) =>{
+    formArr[index].state = "pending";
+    setFormArr([...formArr]);
+  }
+
 
   
     
@@ -71,11 +67,9 @@ const Form = () =>{
         formArr={formArr}
         handleDelete={handleDelete}
         handleDone={handleDone}
+        handleDoubleClickForPending={handleDoubleClickForPending}
+       setFormArr={setFormArr} 
         />
-      
-     
-      
-      
     </div>
   )
 }

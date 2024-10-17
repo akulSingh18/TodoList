@@ -41,7 +41,21 @@
   color:black;
   margin-bottom:5px;
   gap:10px;
+  justify-content: space-between;
   
+}
+
+.todoDetails-items-checkbox-value-cont{
+
+  
+  font-size:24px;
+  border-radius:5px;
+  padding:5px;
+  display:flex;
+  align-items:center;
+  color:black;
+  margin-bottom:5px;
+  gap:10px;
 }
 
 .todoDetails-items-button{
@@ -87,6 +101,55 @@
   color:black;
   background-color:white;
 }
+
+.edit-icon{
+  height:25px;
+  width:30px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.edit-input-save-button{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.edit-input{
+  height:40px;
+  width:40%;
+  font-size:24px;
+  border-radius:5px;
+  padding:5px;
+  border:none;
+  background-color:white;
+  box-shadow: 2px 2px 0px #a09c9c;
+}
+
+.edit-input:focus {
+  background-color: #ffffff;
+  outline:none;
+}
+
+.save-button{
+  font-size: 20px;
+  padding: 12px;
+  border-radius: 5px;
+  background-color: #00b3ff;
+  border: none;
+  box-shadow: 1px 1px 0px #a09c9c;
+}
+
+.save-Icon-img{
+  height: 20px;
+  width: 40px;   
+  background-color: #00b3ff;
+}
+
+
 
 
 
